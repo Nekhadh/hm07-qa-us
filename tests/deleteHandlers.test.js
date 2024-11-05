@@ -16,7 +16,7 @@ test("Response status code for DELETE is 200 OK", async () => {
 test("Response body contains expected data", async () => {
   let actualResponseBody;
   try {
-    const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {
+    const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {
       method: "DELETE",
     });
     actualResponseBody = await response.json();
