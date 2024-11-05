@@ -12,7 +12,7 @@ test('GET request gives response status 200', async () => {
 	expect(actualStatus).toBe(200);
 });
 
-test('Response body contains expected name of warehouse', async () => {
+test("Should include 'Everything You Need' in the warehouse names in the GET response body", async () => {
 	let actualResponseBody;
 	try {
 		const response = await fetch(`${config.API_URL}/api/v1/warehouses`);

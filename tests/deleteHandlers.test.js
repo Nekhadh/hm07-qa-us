@@ -13,7 +13,7 @@ test("Response status code for DELETE is 200 OK", async () => {
   }
   expect(actualStatus).toBe(200);
 });
-test("Response body confirms the deletion of the kit id 8", async () => {
+test("Should include 'ok: true' in DELETE response body to confirm deletion", async () => {
   let actualResponseBody;
   try {
     const response = await fetch(`${config.API_URL}/api/v1/kits/8`, {

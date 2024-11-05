@@ -32,7 +32,7 @@ test('Response status code for POST is 200 OK', async () => {
 	expect(actualStatus).toBe(200);
 });
 
-test('Response body contains expected products and true/false result under each warehouse', async () => {
+test('Should include product availability status for each warehouse in POST response body', async () => {
 	let actualResponseBody;
     try {
 		const response = await fetch(`${config.API_URL}/api/v1/warehouses/check`, {
