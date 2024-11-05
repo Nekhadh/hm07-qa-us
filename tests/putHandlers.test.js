@@ -21,7 +21,7 @@ test("Response status code for PUT request is 200 OK", async () => {
   }
   expect(actualStatus).toBe(200);
 });
-test("Response body contains the expected data", async () => {
+test("Response body confirms the change of price for item id 5", async () => {
   let actualResponseBody;
   try {
     const response = await fetch(`${config.API_URL}/api/v1/products/5`, {
